@@ -2,8 +2,11 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from './Home';
-import Projects from './Projects';
+import Philo from './Philosophie';
+import Weppes from './Weppes';
 import Contact from './Contact';
+import Purchase from './Purchase';
+import Support from './Support';
 import './Home.css';
 
 // The Main component renders one of the three provided
@@ -15,7 +18,10 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route exact path='/projects' component={Projects}/>
+      <Route exact path='/philosophie' component={Philo}/>
+      <Route exact path='/weppes' component={Weppes}/>
+      <Route exact path='/purchase' component={Purchase}/>
+      <Route exact path='/support' component={Support}/>
       <Route exact path='/contact' component={Contact}/>
     </Switch>
   </main>

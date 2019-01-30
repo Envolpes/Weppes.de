@@ -33,7 +33,16 @@ class Header extends React.Component {
                     <MDBNavLink to="/">Home</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/projects">Projekte</MDBNavLink>
+                    <MDBNavLink to="/philosophie">Philosophie</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="/weppes">Die Weppes</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="/purchase">Bestellen</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="/support">Die Unterstützer</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink to="/contact">Kontakt</MDBNavLink>

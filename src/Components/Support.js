@@ -2,9 +2,9 @@ import React from 'react';
 import LazyHero from 'react-lazy-hero';
 
 import './Home.css';
-import Picture from'./Pics/Weppes.jpg';
+import Picture from'./Pics/Apfelernte.jpg';
 
-export default class Projects extends React.Component {
+export default class Support extends React.Component {
 	render(){
 		return(
   		<div>

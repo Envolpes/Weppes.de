@@ -16,9 +16,18 @@
 
 }
 
+.Cards{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+
+}
+
 .CardText{
   text-align: center;
-  font-size: inherit +2;
+  font-size: 24px;
+  border-radius: 10px;
 
 }
 
@@ -63,6 +72,11 @@
 
 .NavLink{
   color: white !important;
+
+}
+
+.Jumbotron{
+text-align:center;
 
 }
 
