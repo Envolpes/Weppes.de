@@ -24,7 +24,7 @@ class Header extends React.Component {
       <div>
             <MDBNavbar color="indigo" dark expand="md" fixed="top">
               <MDBNavbarBrand href="/">
-                <strong>Marcel-René Wepper</strong>
+                <strong>Weppes</strong>
               </MDBNavbarBrand>
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
               <MDBCollapse isOpen={this.state.collapse} navbar>

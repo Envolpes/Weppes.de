@@ -74,6 +74,10 @@
   color: white !important;
 
 }
+.SnapWidget{
+  width: 100%;
+
+}
 
 .Jumbotron{
 text-align:center;
