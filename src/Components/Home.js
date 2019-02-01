@@ -13,6 +13,11 @@ import  Feiern from'./Pics/VorNachWeppes.jpg';
 import  Handcrafted from'./Pics/WeppesHandcrafted.jpg';
 
 export default class Home extends React.Component {
+
+  componentWillUnmount(){
+    window.scrollTo(0, 0)
+  }
+
 	render(){
 		return(
 			<div>
@@ -25,8 +30,9 @@ export default class Home extends React.Component {
 				{/* Hero-Image */}
 				<LazyHero color = "#000000" parallaxOffset="100" minHeight='100vh' opacity ="0.5" imageSrc={Weppes} />
 
-				<div className="HomeText">
-					<h1> Natürliche und unweltschonende Herstellung </h1>
+				<div className="H1-Titel">
+					<h1> Natürliche und unweltschonende Herstellung </h1><br/>
+          <h2> sind nur zwei von vielen guten Gründen, den Weppes zu probieren!</h2>
 				</div>
 
         {/* CARDS */}
@@ -39,7 +45,7 @@ export default class Home extends React.Component {
 					      <CardBody>
 					        <CardTitle tag="h3">Mit Weppes Freude am Feiern</CardTitle>
                   <CardImg top width="100%" src={Feiern} alt="Card image cap" />
-					        <CardText>Das macht der Weppes mit dir! Mit Spaß und gutem Gewissen durch den Abend!</CardText>
+					        <CardText>Das macht der Weppes mit dir! <br/>Mit Spaß und gutem Gewissen durch den Abend!</CardText>
 					      </CardBody>
 						  </Card>
 							</Fade>
@@ -50,7 +56,7 @@ export default class Home extends React.Component {
 					      <CardBody>
 					        <CardTitle tag="h3">Beim Weppes alles in Handarbeit</CardTitle>
                   <CardImg top width="100%" src={Handcrafted} alt="Card image cap" />
-					        <CardText>Beim Weppes wird alles mit der Hand gemacht. Jede einzelne Flasche ist somit ein Unikat.</CardText>
+					        <CardText>Beim Weppes wird alles mit der Hand gemacht. <br/>Jede einzelne Flasche ist somit ein Unikat.</CardText>
 									<CardText></CardText>
 					      </CardBody>
 						  </Card>

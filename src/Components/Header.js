@@ -22,13 +22,13 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-            <MDBNavbar color="indigo" dark expand="md" fixed="top">
+            <MDBNavbar color="bg-dark" fixed="top" dark expand="md" scrolling transparent>
+            {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
+            <MDBCollapse isOpen={this.state.collapse} navbar>
               <MDBNavbarBrand href="/">
                 <strong>Weppes</strong>
               </MDBNavbarBrand>
-              {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
-              <MDBCollapse isOpen={this.state.collapse} navbar>
-                <MDBNavbarNav left>
+                <MDBNavbarNav right>
                   <MDBNavItem>
                     <MDBNavLink to="/">Home</MDBNavLink>
                   </MDBNavItem>

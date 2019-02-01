@@ -80,14 +80,19 @@
 }
 
 .Philosophie{
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 1.5%;
+  padding-bottom: 2.5%;
 
+}
+.H1-Titel{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 
 }
 
 .Jumbotron{
-text-align:center;
+  text-align:center;
 
 }
 

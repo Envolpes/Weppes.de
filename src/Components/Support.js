@@ -5,6 +5,11 @@ import './Home.css';
 import Picture from'./Pics/Apfelernte.jpg';
 
 export default class Support extends React.Component {
+
+	componentWillUnmount(){
+    window.scrollTo(0, 0)
+  }
+
 	render(){
 		return(
   		<div>

@@ -5,6 +5,11 @@ import './Home.css';
 import Picture from'./Pics/Kontakt.jpg';
 
 export default class Contact extends React.Component {
+
+	componentWillUnmount(){
+    window.scrollTo(0, 0)
+  }
+
 	render(){
 		return(
   		<div class>

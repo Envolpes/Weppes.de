@@ -5,6 +5,11 @@ import './Home.css';
 import Picture from'./Pics/Weppes_Reihe.jpg';
 
 export default class Weppes extends React.Component {
+
+	componentWillUnmount(){
+    window.scrollTo(0, 0)
+  }
+
 	render(){
 		return(
   		<div>

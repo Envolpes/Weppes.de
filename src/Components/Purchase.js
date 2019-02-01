@@ -5,6 +5,11 @@ import './Home.css';
 import Picture from'./Pics/FanPic.jpg';
 
 export default class Purchase extends React.Component {
+
+	componentWillUnmount(){
+    window.scrollTo(0, 0)
+  }
+	
 	render(){
 		return(
   		<div>
