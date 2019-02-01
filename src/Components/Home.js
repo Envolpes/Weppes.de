@@ -17,6 +17,7 @@ export default class Home extends React.Component {
 		return(
 			<div>
 
+        {/*  Headerfür Metatags und laden des Skripts für Instagramm */}
         <Helmet>
         <script src="https://snapwidget.com/js/snapwidget.js"></script>
         </Helmet>
