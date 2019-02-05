@@ -96,6 +96,19 @@
 
 }
 
+.Bild{
+  padding-bottom: 2%;
+  padding-top: 1%;
+  border-radius: 10%;
+
+}
+
+.Platzhalter{
+  opacity: 0;
+  padding: 1%;
+
+}
+
 .Footer{
   color:white;
   padding-top: 1%;

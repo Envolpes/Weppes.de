@@ -2,10 +2,13 @@ import React from 'react';
 import LazyHero from 'react-lazy-hero';
 import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
   CardTitle } from 'reactstrap';
+import { MDBView} from "mdbreact";
 import Fade from 'react-reveal/Fade';
 
 import './Home.css';
 import Picture from'./Pics/Apfelwagen.jpg';
+import Baum from'./Pics/Apfelbaum.jpg';
+import Wagen from'./Pics/Wagen.jpg';
 
 export default class Philo extends React.Component {
 
@@ -88,6 +91,44 @@ export default class Philo extends React.Component {
           </Fade>
           </Jumbotron>
 				</Container>
+
+        <Container fluid>
+          <Row>
+            <Col xl="5">
+              <MDBView waves>
+                <img src={Wagen} className="img-fluid Bild" alt="" />
+              </MDBView>
+            </Col>
+            <Col xl="7">
+              <h1>Handerlesene Äpfel</h1> <br/>
+              <h3>Von der Ernte jedes einzelnen Apfel bis zum Abfüllen des Getränke alles in Handarbeit. </h3> <br/>
+              <h3>Dabei steht weder eine Massenproduktion im Vordergrund, noch ein schneller Profit. Entschleunigung ist das Ziel. Die Natur, wie es gewollt hätte. </h3> <br/>
+              <h3>Im Weppes wurde jeder Apfel einzeln von den Bäumen gepflückt, inspiziert und bewertet, ob dieser für den Apfelwein in Frage kommt. Nur die besten aller Äpfel schafften es in die Auswahl.</h3>
+            </Col>
+          </Row>
+
+          {/* PLATZHALTER */}
+          <Jumbotron className="Platzhalter"/>
+          <Row>
+
+            <Col xl="9" >
+              <div style={{textAlign:'right'}}>
+                <h1>Natürlicher Genuß</h1> <br/>
+                <h3>Frische, handerlesene Äpfel, ausreichend Zeit und Geduld, und ein Funken Neugier, sind die einzigen Bestandteile, die ein guter Apfelwein zu haben hat.</h3> <br/>
+                <h3>Ein Unterschied, den man scheckt!</h3> <br/>
+                <h3>Eine leichte Süße, gefolgt von einer natürlich sauren Note im Nachgang. Frischer Genuß, ohne Zusätze, ohne Mitwirken durch Fremdeinflüsse.</h3><br/>
+                <b>Keine künstlichen Aromastoffe, keine tierieschen Produkte jeglicher Art. Für vegane Ernährung geeignet.</b>
+              </div>
+            </Col>
+            <Col xl="3">
+              <MDBView waves>
+                <img src={Baum} className="img-fluid Bild" alt="" />
+              </MDBView>
+            </Col>
+
+          </Row>
+
+        </Container>
 			</div>
 
 		);
