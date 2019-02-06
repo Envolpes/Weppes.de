@@ -13,7 +13,6 @@
   padding-bottom: 1%;
   text-align: center;
 
-
 }
 
 .Cards{
@@ -26,6 +25,15 @@
 
 .CardText{
   text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+
+}
+.CardBlock{
+  text-align: center;
+  padding: 2.5%;
+  padding-top: 10%;
+
   font-size: 24px;
   border-radius: 10px;
 
@@ -49,6 +57,13 @@
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   padding-right: 1%;
+
+}
+.CardsFull{
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+
 
 }
 
@@ -79,6 +94,7 @@
 
 }
 
+
 .Philosophie{
   padding-top: 1.5%;
   padding-bottom: 2.5%;
@@ -96,6 +112,8 @@
 
 }
 
+
+
 .Bild{
   padding-bottom: 2%;
   padding-top: 1%;
@@ -109,10 +127,15 @@
 
 }
 
+.Info{
+  background-color: lightgrey;
+}
+
 .Footer{
+  font-size: 20px;
   color:white;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 3%;
+  padding-bottom: 2%;
   background-color: #404040;
 
 }

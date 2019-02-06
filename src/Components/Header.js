@@ -12,6 +12,15 @@ class Header extends React.Component {
     };
     this.onClick = this.onClick.bind(this);
   }
+  componentDidUpdate(){
+    if (this.state.collapse) {
+      this.setState({
+      collapse:false
+      });
+
+    }
+
+  }
 
   onClick() {
     this.setState({
@@ -22,7 +31,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-            <MDBNavbar color="bg-dark" fixed="top" dark expand="md" scrolling transparent>
+            <MDBNavbar color="bg-dark" fixed="top" dark expand="md" scrolling>
             {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
             <MDBCollapse isOpen={this.state.collapse} navbar>
               <MDBNavbarBrand href="/">
