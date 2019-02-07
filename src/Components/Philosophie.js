@@ -1,7 +1,6 @@
 import React from 'react';
 import LazyHero from 'react-lazy-hero';
-import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
-  CardTitle } from 'reactstrap';
+import { Container, Row, Col, Jumbotron} from 'reactstrap';
 import { MDBView} from "mdbreact";
 import Fade from 'react-reveal/Fade';
 
@@ -114,9 +113,9 @@ export default class Philo extends React.Component {
             <Col xl="9" >
               <div style={{textAlign:'right'}}>
                 <h1>Natürlicher Genuß</h1> <br/>
-                <h3>Frische, handerlesene Äpfel, ausreichend Zeit und Geduld, und ein Funken Neugier, sind die einzigen Bestandteile, die ein guter Apfelwein zu haben hat.</h3> <br/>
+                <h3>Frische, handerlesene Äpfel, ausreichend Zeit und Geduld, und ein Funken Neugier, <br/> sind die einzigen Bestandteile, die ein guter Apfelwein zu haben hat.</h3> <br/>
                 <h3>Ein Unterschied, den man scheckt!</h3> <br/>
-                <h3>Eine leichte Süße, gefolgt von einer natürlich sauren Note im Nachgang. Frischer Genuß, ohne Zusätze, ohne Mitwirken durch Fremdeinflüsse.</h3><br/>
+                <h3>Eine leichte Süße, gefolgt von einer natürlich sauren Note im Nachgang. <br/>Frischer Genuß, ohne Zusätze, ohne Mitwirken durch Fremdeinflüsse.</h3><br/>
                 <b>Keine künstlichen Aromastoffe, keine tierieschen Produkte jeglicher Art. Für vegane Ernährung geeignet.</b>
               </div>
             </Col>

@@ -22,6 +22,15 @@
   padding-bottom: 1.5%;
 
 }
+.Sup1{
+  color: white;
+  background: #424242;
+
+}
+.Sup2{
+  color: white;
+  background: #757575;
+}
 
 .CardText{
   text-align: center;
@@ -30,14 +39,17 @@
 
 }
 .CardBlock{
-  text-align: center;
-  padding: 2.5%;
-  padding-top: 10%;
-
-  font-size: 24px;
-  border-radius: 10px;
+  text-align: block;
+  padding: 10%;
+  font-size: 125%;
 
 }
+.CardsFull{
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+
 
 .CardTitle{
 
@@ -59,13 +71,7 @@
   padding-right: 1%;
 
 }
-.CardsFull{
-  width: 100%;
-  padding-left: 0%;
-  padding-right: 0%;
 
-
-}
 
 .Picture{
   display: block;
@@ -109,6 +115,8 @@
 
 .Jumbotron{
   text-align:center;
+  margin-bottom: 0%;
+  background-color: #115115115;
 
 }
 
@@ -117,7 +125,7 @@
 .Bild{
   padding-bottom: 2%;
   padding-top: 1%;
-  border-radius: 10%;
+  border-radius: 20px;
 
 }
 
@@ -136,6 +144,6 @@
   color:white;
   padding-top: 3%;
   padding-bottom: 2%;
-  background-color: #404040;
+  background-color: #373737;
 
 }
