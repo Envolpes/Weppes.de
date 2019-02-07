@@ -6,11 +6,17 @@ import CookieConsent from "react-cookie-consent";
 import Fade from 'react-reveal/Fade';
 import {Helmet} from "react-helmet";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 import  Weppes from'./Pics/Weppes.jpg';
 import  Feiern from'./Pics/VorNachWeppes.jpg';
 import  Handcrafted from'./Pics/WeppesHandcrafted.jpg';
+import Rene from'./Pics/Rene.jpg';
+import FounderChrisMichael from'./Pics/FounderChrisMichael.jpg';
+import FounderFlorian from'./Pics/FounderFlorian.jpg';
 
 export default class Home extends React.Component {
 
@@ -67,7 +73,7 @@ export default class Home extends React.Component {
         </div>
 
         <div className="Jumbotron">
-          <Jumbotron fluid>
+          <Jumbotron fluid className="Jumbotron">
             <Container fluid>
               <Row>
                 <Col>
@@ -96,10 +102,28 @@ export default class Home extends React.Component {
         </div>
 
 
-        <div className="CardText">
-          <a href="https://www.instagram.com/weppeswein/"> <h1>@WeppesWein · auf Instagram</h1></a>
+        <div className=" Sup1" style={{textAlign:"center"}}>
+          <a href="https://www.instagram.com/weppeswein/"> <h1 >@WeppesWein · auf Instagram</h1></a>
           <iframe src="https://snapwidget.com/embed/632669" className="snapwidget-widget SnapWidget" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
         </div>
+
+        <h1 className="H1-Titel Sup1"> Meine bereits überzeugten Unterstützer: </h1>
+
+        <Carousel className="CustCarousel" showThumbs={false} showStatus={false} dynamicHeight ={true} infiniteLoop={true} autoPlay={true} interval={4000} stopOnHover={false}>
+
+                <div>
+                    <img src={Rene} />
+                    <p className="legend">Founder Rene</p>
+                </div>
+                <div>
+                    <img src={FounderChrisMichael} />
+                    <p className="legend">Founder Chris und Michael</p>
+                </div>
+                <div>
+                    <img src={FounderFlorian} />
+                    <p className="legend">Founder Florian</p>
+                </div>
+            </Carousel>
 
 
 
