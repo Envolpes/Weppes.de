@@ -17,9 +17,7 @@ class Header extends React.Component {
       this.setState({
       collapse:false
       });
-
     }
-
   }
 
   onClick() {
