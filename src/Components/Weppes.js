@@ -39,7 +39,7 @@ export default class Weppes extends React.Component {
 					</Col>
 				</Row>
         <Row noGutters="true" className="Sup1">
-  				<Col lg={{ size:6, order: 1}} md={{size:12, order:1}} sm={{size:12, order:2}} xs={{size:12, order:2}}>
+  				<Col lg={{ size:6, order: 1}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}}>
   					<Card >
               <img src={Fass} className="img-fluid" alt="" />
   					</Card>
