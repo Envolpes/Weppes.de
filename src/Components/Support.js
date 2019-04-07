@@ -21,7 +21,7 @@ export default class Support extends React.Component {
 
 	render(){
 		return(
-  		<div>
+  		<div style={{background:"#212121", color:"white"}}>
 				<LazyHero color = "#000000" parallaxOffset="100" minHeight='100vh' opacity ="0.5" imageSrc={Picture}/>
 
 				<div className="H1-Titel">
@@ -44,11 +44,7 @@ export default class Support extends React.Component {
 					</Col>
 					<Col lg={{ size:6, order: 2}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}} >
 						<Card>
-              <Rotate top left>
-                <MDBView waves>
-                  <img src={Friedle} className="img-fluid" alt="" />
-                </MDBView>
-              </Rotate>
+              <img src={Friedle} className="img-fluid" alt="" />
 						</Card>
 					</Col>
 				</Row>
@@ -69,11 +65,7 @@ export default class Support extends React.Component {
 					</Col>
 					<Col lg={{ size:5, order: 1}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}} >
 						<Card>
-              <Rotate top left>
-                <MDBView waves>
-                  <img src={Rene} className="img-fluid" alt="" />
-                </MDBView>
-              </Rotate>
+              <img src={Rene} className="img-fluid" alt="" />
 						</Card>
 					</Col>
 				</Row>
@@ -87,11 +79,7 @@ export default class Support extends React.Component {
 					</Col>
 					<Col lg={{ size:7, order: 2}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}} >
 						<Card>
-              <Rotate top left>
-                <MDBView waves>
-                  <img src={FounderFlorian} className="img-fluid" alt="" />
-                </MDBView>
-              </Rotate>
+              <img src={FounderFlorian} className="img-fluid" alt="" />
 						</Card>
 					</Col>
 				</Row>
@@ -106,11 +94,7 @@ export default class Support extends React.Component {
 					</Col>
 					<Col lg={{ size:5, order: 1}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}} >
 						<Card>
-              <Rotate top left>
-                <MDBView waves>
-                  <img src={FounderChrisMichael} className="img-fluid" alt="" />
-                </MDBView>
-              </Rotate>
+              <img src={FounderChrisMichael} className="img-fluid" alt="" />
 						</Card>
 					</Col>
 				</Row>

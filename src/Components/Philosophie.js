@@ -17,7 +17,7 @@ export default class Philo extends React.Component {
 
 	render(){
 		return(
-  		<div >
+  		<div style={{background:"#212121",color:"white"}}>
 				{/* Hero Image*/}
 				<LazyHero color = "#000000" parallaxOffset="100" minHeight='100vh' opacity ="0.5" imageSrc={Picture}>
 				</LazyHero>
@@ -91,12 +91,11 @@ export default class Philo extends React.Component {
           </Jumbotron>
 				</Container>
 
+        <Jumbotron className="Platzhalter"/>
         <Container fluid>
           <Row>
             <Col xl="5">
-              <MDBView waves>
                 <img src={Wagen} className="img-fluid Bild" alt="" />
-              </MDBView>
             </Col>
             <Col xl="7">
               <h1>Handerlesene Äpfel</h1> <br/>
@@ -120,13 +119,9 @@ export default class Philo extends React.Component {
               </div>
             </Col>
             <Col xl="3">
-              <MDBView waves>
-                <img src={Baum} className="img-fluid Bild" alt="" />
-              </MDBView>
+              <img src={Baum} className="img-fluid Bild" alt="" />
             </Col>
-
           </Row>
-
         </Container>
 			</div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink } from 'mdbreact';
 
+import Brand from './Pics/brand.png'
 import './Home.css'
 
 class Header extends React.Component {
@@ -29,12 +30,14 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-            <MDBNavbar color="bg-dark" fixed="top" dark expand="md" scrolling>
+            <MDBNavbar style={{background:"#212121"}} fixed="top" dark expand="md">
+            <MDBNavbarBrand href="/">
+            <img src={Brand} height="30" alt="" />
+              <strong>Weppes</strong>
+            </MDBNavbarBrand>
             {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
             <MDBCollapse isOpen={this.state.collapse} navbar>
-              <MDBNavbarBrand href="/">
-                <strong>Weppes</strong>
-              </MDBNavbarBrand>
+
                 <MDBNavbarNav right>
                   <MDBNavItem>
                     <MDBNavLink to="/">Home</MDBNavLink>

@@ -15,7 +15,7 @@ export default class Footer extends React.Component {
 					</Row>
 					<Row className="Footer">
 							<Col> <NavLink to="/purchase" className="NavLink"> Bestellen</NavLink></Col>
-							<Col> <a href="mailto:marcel@weppes.de" className="NavLink"> Mailen</a></Col>
+							<Col> <a href="mailto:marcelwepper@gmail.com" className="NavLink"> Mailen</a></Col>
 							<Col> <NavLink to="/contact" className="NavLink"> Datenschutzhinweis</NavLink></Col>
 					</Row>
 				</Container>

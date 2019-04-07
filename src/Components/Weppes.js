@@ -18,7 +18,7 @@ export default class Weppes extends React.Component {
 
 	render(){
 		return(
-  		<div className="CardsFull">
+  		<div className="CardsFull" style={{background:"#212121",color:"white"}}>
 
       {/* H1 Titeltextseite*/}
       {/* NoGutters bewirkt, dass kein Abstand zwischen den Feldern vorhanden ist, somit edge to edge*/}
@@ -34,22 +34,14 @@ export default class Weppes extends React.Component {
 					</Col>
 					<Col lg={{ size:12, order: 2}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}} >
 						<Card>
-              <Rotate top left>
-                <MDBView waves>
-                  <img src={Founder} className="img-fluid" alt="" />
-                </MDBView>
-              </Rotate>
+              <img src={Founder} className="img-fluid" alt="" style={{width:"100%"}}/>
 						</Card>
 					</Col>
 				</Row>
         <Row noGutters="true" className="Sup1">
   				<Col lg={{ size:6, order: 1}} md={{size:12, order:1}} sm={{size:12, order:2}} xs={{size:12, order:2}}>
   					<Card >
-              <Rotate top right>
-                <MDBView waves>
-                  <img src={Fass} className="img-fluid" alt="" />
-                </MDBView>
-              </Rotate>
+              <img src={Fass} className="img-fluid" alt="" />
   					</Card>
   				</Col>
   				<Col lg={{ size:6, order: 2}} md={{size:12, order:1}} sm={{size:12, order:1}} xs={{size:12, order:1}}>
@@ -77,11 +69,7 @@ export default class Weppes extends React.Component {
   					</Col>
   					<Col lg={{ size:6, order: 2}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}}>
   						<Card >
-                <Rotate top left>
-                  <MDBView waves>
-                    <img src={Cider} className="img-fluid" alt="" />
-                  </MDBView>
-                </Rotate>
+                  <img src={Cider} className="img-fluid" dark alt="" />
   						</Card>
   					</Col>
   				</Row>

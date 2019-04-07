@@ -5,7 +5,6 @@
 
 .grid{
 	text-align: center;
-	border-radius: 20px;
 
 }
 .HomeText{
@@ -47,7 +46,6 @@
 .CardText{
   text-align: center;
   font-size: 24px;
-  border-radius: 10px;
 
 }
 .CardBlock{
@@ -122,6 +120,7 @@
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  color:white;
 
 }
 
@@ -129,6 +128,7 @@
   text-align:center;
   margin-bottom: 0%;
   background-color: #115115115;
+  color:black;
 
 }
 
@@ -137,7 +137,6 @@
 .Bild{
   padding-bottom: 2%;
   padding-top: 1%;
-  border-radius: 20px;
 
 }
 
