@@ -32,7 +32,7 @@ class Header extends React.Component {
       <div>
             <MDBNavbar style={{background:"#212121"}} fixed="top" dark expand="md">
             <MDBNavbarBrand href="/">
-            <img src={Brand} height="30" alt="" />
+            <img src={Brand} height="30" alt="Weppes Apfelwein brand" />
               <strong>Weppes</strong>
             </MDBNavbarBrand>
             {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
@@ -41,9 +41,6 @@ class Header extends React.Component {
                 <MDBNavbarNav right>
                   <MDBNavItem>
                     <MDBNavLink to="/">Home</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="/philosophie">Philosophie</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink to="/weppes">Die Weppes</MDBNavLink>

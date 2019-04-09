@@ -1,7 +1,7 @@
 import React from 'react';
 import LazyHero from 'react-lazy-hero';
-import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
-  CardTitle } from 'reactstrap';
+import { Container, Row, Col, Jumbotron} from 'reactstrap';
+import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from 'mdbreact';
 import CookieConsent from "react-cookie-consent";
 import Fade from 'react-reveal/Fade';
 import {Helmet} from "react-helmet";
@@ -44,9 +44,9 @@ export default class Home extends React.Component {
 
         <Row noGutters="true" className="Sup2">
           <Col lg={{ size:6, order: 1}} md={{size:12, order:1}} sm={{size:12, order:1}} xs={{size:12, order:1}}>
-            <Card >
+            <MDBCard >
               <img src={Fass} className="img-fluid" alt="" />
-            </Card>
+            </MDBCard>
           </Col>
           <Col lg={{ size:6, order: 2}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}}>
             <div className="CardBlock">
@@ -67,26 +67,28 @@ export default class Home extends React.Component {
         <div className="Cards">
     		<Container fluid>
 					<Row>
-						<Col lg={{ size:6}} md={{size:12}} sm={{size:12}} xs={{size:12}}>>
+						<Col lg={{ size:6}} md={{size:12}} sm={{size:12}} xs={{size:12}}>
 						<Fade left delay={400}>
-							<Card body className="CardText">
-					      <CardBody>
-					        <CardTitle tag="h3">Mit Weppes Freude am Feiern</CardTitle>
-                  <img width="100%" src={Feiern} alt="Card image cap" />
-					        <CardText>Das macht der Weppes mit dir! <br/>Mit Spaß und gutem Gewissen durch den Abend!</CardText>
-					      </CardBody>
-						  </Card>
+							<MDBCard body className="CardText">
+					      <MDBCardBody>
+					        <MDBCardTitle tag="h3">Mit Weppes Freude am Feiern</MDBCardTitle>
+                  <img style={{ width: "100%" }} src={Feiern} alt="Card Apfelwein Feiern cap" />
+					        <MDBCardText>Das macht der Weppes mit dir! <br/>Mit Spaß und gutem Gewissen durch den Abend!</MDBCardText>
+					      </MDBCardBody>
+						  </MDBCard>
 							</Fade>
+              <div className="Platzhalter" />
 						</Col>
-						<Col lg={{ size:6}} md={{size:12}} sm={{size:12}} xs={{size:12}}>>
+
+						<Col lg={{ size:6}} md={{size:12}} sm={{size:12}} xs={{size:12}}>
 						<Fade left delay={200}>
-							<Card body className="CardText">
-					      <CardBody>
-					        <CardTitle tag="h3">Beim Weppes ist alles in Handarbeit</CardTitle>
-                  <img width="100%" src={Handcrafted} alt="Card image cap" />
-					        <CardText>Beim Weppes wird alles mit der Hand gemacht. <br/>Jede einzelne Flasche ist somit ein Unikat.</CardText>
-					      </CardBody>
-						  </Card>
+							<MDBCard body className="CardText">
+					      <MDBCardBody>
+					        <MDBCardTitle tag="h3">Beim Weppes ist alles in Handarbeit</MDBCardTitle>
+                  <img style={{ width: "100%" }} src={Handcrafted} alt="Card Apfelwein Handcrafted cap" />
+					        <MDBCardText>Beim Weppes wird alles mit der Hand gemacht. <br/>Jede einzelne Flasche ist somit ein Unikat.</MDBCardText>
+					      </MDBCardBody>
+						  </MDBCard>
 							</Fade>
 						</Col>
 					</Row>
@@ -128,7 +130,7 @@ export default class Home extends React.Component {
 
         <div className=" Sup1">
           <a href="https://www.instagram.com/weppeswein/"> <h1 className="H1-Titel Sup1">@WeppesWein · auf Instagram</h1></a>
-          <iframe src="https://snapwidget.com/embed/632669" className="snapwidget-widget SnapWidget" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://snapwidget.com/embed/632669" className="snapwidget-widget SnapWidget" allowtransparency="true" frameborder="0" scrolling="no" title="Instagram"></iframe>
         </div>
 
         <h1 className="H1-Titel Sup1"> Meine bereits überzeugten Unterstützer: </h1>
@@ -136,20 +138,18 @@ export default class Home extends React.Component {
         <Carousel className="CustCarousel" showThumbs={false} showStatus={false} dynamicHeight ={true} infiniteLoop={true} autoPlay={true} interval={4000} stopOnHover={false}>
 
                 <div>
-                    <img src={Rene} />
+                    <img src={Rene} alt="Supporter Apfelwein Rene Bettrich"/>
                     <p className="legend">Founder Rene</p>
                 </div>
                 <div>
-                    <img src={FounderChrisMichael} />
+                    <img src={FounderChrisMichael} alt="Supporter Apfelwein Chris und Michael"/>
                     <p className="legend">Founder Chris und Michael</p>
                 </div>
                 <div>
-                    <img src={FounderFlorian} />
+                    <img src={FounderFlorian} alt="Supporter Apfelwein Rene Bettrich" />
                     <p className="legend">Founder Florian</p>
                 </div>
             </Carousel>
-
-
 
 				{/*	Hier wird der Cookie und deren Parameter bestimmt	*/}
 				<CookieConsent

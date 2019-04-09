@@ -1,9 +1,6 @@
 import React from 'react';
 import LazyHero from 'react-lazy-hero';
-import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
-  CardTitle } from 'reactstrap';
-import Rotate from 'react-reveal/Rotate';
-import { MDBView} from "mdbreact";
+import { Row, Col, Jumbotron, Card} from 'reactstrap';
 
 import './Home.css';
 import Picture from'./Pics/Apfelernte.jpg';
@@ -11,6 +8,7 @@ import Friedle from'./Pics/FamFriedle.jpg';
 import Rene from'./Pics/Rene.jpg';
 import FounderChrisMichael from'./Pics/FounderChrisMichael.jpg';
 import FounderFlorian from'./Pics/FounderFlorian.jpg';
+import MaWe from'./Pics/MaWe.JPG';
 
 
 export default class Support extends React.Component {
@@ -95,6 +93,26 @@ export default class Support extends React.Component {
 					<Col lg={{ size:5, order: 1}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}} >
 						<Card>
               <img src={FounderChrisMichael} className="img-fluid" alt="" />
+						</Card>
+					</Col>
+				</Row>
+
+        <div className="Jumbotron">
+          <Jumbotron fluid className="Jumbotron">
+						<h1> Das Team </h1>
+					</Jumbotron>
+				</div>
+
+				<Row noGutters="true" className="Sup1">
+					<Col lg={{ size:6, order: 1}} md={{size:12, order:1}} sm={{size:12, order:1}} xs={{size:12, order:1}}>
+						<div className="CardBlock">
+						<h3> Der Weppes - Marcel-René Wepper</h3>
+								Ich hatte Lust darauf, etwas neues zu  probieren. Aus einer Schnapps-Idee wurde eine Wein-feste Tatsache.
+						</div>
+					</Col>
+					<Col lg={{ size:6, order: 2}} md={{size:12, order:2}} sm={{size:12, order:2}} xs={{size:12, order:2}} >
+						<Card>
+              <img src={MaWe} className="img-fluid" alt="" />
 						</Card>
 					</Col>
 				</Row>
