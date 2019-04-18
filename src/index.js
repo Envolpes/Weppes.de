@@ -1,7 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
-import { register } from 'register-service-worker'
+import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
+import { register } from 'register-service-worker';
 import App from './Components/App';
 import './index.css';
 
@@ -10,6 +11,8 @@ render((
     <App />
   </BrowserRouter>
 ), document.getElementById('root'));
+
+serviceWorker.register();
 
 register('/service-worker.js', {
   registrationOptions: { scope: './' },
@@ -34,4 +37,4 @@ register('/service-worker.js', {
   error (error) {
     console.error('Error during service worker registration:', error)
   }
-})
+});
