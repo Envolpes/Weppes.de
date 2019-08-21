@@ -4,4 +4,4 @@ This is my personal website presenting one of my hobbies: making applewine / Apf
 
 ## What I learned
 
-React.js website with site navigation. PWA enabled.
+Hosting via AWS. Serverless React.js website with site navigation. PWA enabled.
